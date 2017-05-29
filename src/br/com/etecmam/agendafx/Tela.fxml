@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="377.0" prefWidth="539.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <VBox layoutX="14.0" layoutY="20.0" prefHeight="240.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="44.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="9.0" layoutY="7.0" text="AGENDA" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="63.0" text="CÓDIGO" />
+                <TableColumn prefWidth="180.0" text="NOME" />
+                  <TableColumn prefWidth="107.0" text="FONE" />
+                  <TableColumn prefWidth="175.0" text="EMAIL" />
+              </columns>
+            </TableView>
+            <Pane prefHeight="65.0" prefWidth="539.0" style="-fx-background-color: lightgray;">
+               <children>
+                  <TextField layoutX="6.0" layoutY="22.0" prefHeight="25.0" prefWidth="63.0" promptText="CÓDIGO" />
+                  <TextField layoutX="75.0" layoutY="22.0" prefHeight="25.0" prefWidth="162.0" promptText="NOME" />
+                  <TextField layoutX="247.0" layoutY="22.0" prefHeight="25.0" prefWidth="113.0" promptText="FONE" />
+                  <TextField layoutX="366.0" layoutY="22.0" prefHeight="25.0" prefWidth="168.0" promptText="EMAIL" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
