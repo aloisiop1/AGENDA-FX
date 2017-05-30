@@ -5,14 +5,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Agenda extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
 	}
-
-	
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -23,6 +22,7 @@ public class Agenda extends Application {
 		
 		primaryStage.setScene(cena);
 		primaryStage.setTitle("AGENDA");
+		primaryStage.initStyle(StageStyle.UNDECORATED);
 		primaryStage.show();		
 		
 	}

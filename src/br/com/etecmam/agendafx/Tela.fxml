@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="377.0" prefWidth="539.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="362.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="14.0" layoutY="20.0" prefHeight="240.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -34,6 +33,35 @@
                   <TextField layoutX="75.0" layoutY="22.0" prefHeight="25.0" prefWidth="162.0" promptText="NOME" />
                   <TextField layoutX="247.0" layoutY="22.0" prefHeight="25.0" prefWidth="113.0" promptText="FONE" />
                   <TextField layoutX="366.0" layoutY="22.0" prefHeight="25.0" prefWidth="168.0" promptText="EMAIL" />
+               </children>
+            </Pane>
+            <Pane prefHeight="50.0" prefWidth="539.0" style="-fx-background-color: white; -fx-border-color: gray;">
+               <children>
+                  <Button layoutX="3.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="69.0" text="Novo">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="84.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="69.0" text="Excluir">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="175.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="69.0" text="Salvar">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="270.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="69.0" text="Cancelar">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="466.0" layoutY="3.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="69.0" text="Sair">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
                </children>
             </Pane>
          </children>
