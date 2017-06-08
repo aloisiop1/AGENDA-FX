@@ -9,9 +9,7 @@ import javafx.stage.StageStyle;
 
 public class Agenda extends Application {
 	
-	public Agenda() {
-		// TODO Auto-generated constructor stub
-	}
+	
 	public static void main(String[] args) {
 		launch(args);
 	}

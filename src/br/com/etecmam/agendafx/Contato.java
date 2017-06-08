@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Contato {	
 	@Id	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long codigo;
+	private Long codigo;
 	private String nome;
 	private String fone;
 	private String email;	
@@ -22,12 +22,15 @@ public class Contato {
 		this.fone = fone;
 		this.email = email;
 	}
-	public long getCodigo() {
+	
+	public Long getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(long codigo) {
+
+	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
 	}
+
 	public String getNome() {
 		return nome;
 	}
