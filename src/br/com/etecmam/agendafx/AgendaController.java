@@ -3,6 +3,8 @@ package br.com.etecmam.agendafx;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -54,6 +56,18 @@ public class AgendaController implements Initializable {
 		colFone.setCellValueFactory( valorDaCelula -> valorDaCelula.getValue().getFone() );
 		
 		tabela.getItems().addAll( contatos );
+		
+		codificarBotoes();
+		
+	}
+
+	private void codificarBotoes() {
+
+		btnSair.setOnAction( sair ->{			
+			Platform.exit();
+			System.exit(0);
+		});
+		
 	}
 
 }

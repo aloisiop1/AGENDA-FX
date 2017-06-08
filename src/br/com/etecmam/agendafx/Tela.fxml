@@ -1,106 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="362.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.etecmam.agendafx.AgendaController">
-   <children>
-      <VBox layoutX="14.0" layoutY="20.0" prefHeight="240.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Pane prefHeight="44.0" style="-fx-background-color: #000000;">
-               <children>
-                  <Label layoutX="9.0" layoutY="7.0" text="AGENDA" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="21.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <TableView fx:id="tabela" prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                <TableColumn fx:id="colCodigo" prefWidth="63.0" text="CÓDIGO" />
-                <TableColumn fx:id="colNome" prefWidth="180.0" text="NOME" />
-                  <TableColumn fx:id="colFone" prefWidth="107.0" text="FONE" />
-                  <TableColumn fx:id="colEmail" prefWidth="175.0" text="EMAIL" />
-              </columns>
-            </TableView>
-            <Pane prefHeight="65.0" prefWidth="539.0" style="-fx-background-color: lightgray;">
-               <children>
-                  <TextField fx:id="txtCodigo" layoutX="6.0" layoutY="22.0" prefHeight="25.0" prefWidth="63.0" promptText="CÓDIGO" />
-                  <TextField fx:id="txtNome" layoutX="75.0" layoutY="22.0" prefHeight="25.0" prefWidth="162.0" promptText="NOME" />
-                  <TextField fx:id="txtFone" layoutX="247.0" layoutY="22.0" prefHeight="25.0" prefWidth="113.0" promptText="FONE" />
-                  <TextField fx:id="txtEmail" layoutX="366.0" layoutY="22.0" prefHeight="25.0" prefWidth="168.0" promptText="EMAIL" />
-               </children>
-            </Pane>
-            <Pane prefHeight="50.0" prefWidth="539.0" style="-fx-background-color: white; -fx-border-color: gray;">
-               <children>
-                  <Button fx:id="btnNovo" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Novo">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imagens/Add%20User%20Male-32.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="btnExcluir" layoutX="108.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Excluir">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imagens/Remove%20User%20Male-32.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="btnSalvar" layoutX="213.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Salvar">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imagens/Edit%20User%20Male-32.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="btnCancelar" layoutX="318.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="105.0" text="Cancelar">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imagens/Rotate%20Left-32.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="btnSair" layoutX="437.0" layoutY="3.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Sair">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imagens/Exit-32.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-               </children>
-            </Pane>
-         </children>
-      </VBox>
-   </children>
+<AnchorPane prefHeight="362.0" prefWidth="539.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.etecmam.agendafx.AgendaController">
+  <children>
+    <VBox prefHeight="240.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Pane prefHeight="44.0" style="-fx-background-color: #000000;">
+          <children>
+            <Label layoutX="9.0" layoutY="7.0" text="AGENDA" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="21.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+        <TableView fx:id="tabela" prefHeight="200.0" prefWidth="200.0">
+          <columns>
+            <TableColumn prefWidth="63.0" text="CÓDIGO" fx:id="colCodigo" />
+            <TableColumn prefWidth="180.0" text="NOME" fx:id="colNome" />
+            <TableColumn prefWidth="107.0" text="FONE" fx:id="colFone" />
+            <TableColumn prefWidth="175.0" text="EMAIL" fx:id="colEmail" />
+          </columns>
+        </TableView>
+        <Pane prefHeight="65.0" prefWidth="539.0" style="-fx-background-color: lightgray;">
+          <children>
+            <TextField fx:id="txtCodigo" layoutX="6.0" layoutY="22.0" prefHeight="25.0" prefWidth="63.0" promptText="CÓDIGO" />
+            <TextField fx:id="txtNome" layoutX="75.0" layoutY="22.0" prefHeight="25.0" prefWidth="162.0" promptText="NOME" />
+            <TextField fx:id="txtFone" layoutX="247.0" layoutY="22.0" prefHeight="25.0" prefWidth="113.0" promptText="FONE" />
+            <TextField fx:id="txtEmail" layoutX="366.0" layoutY="22.0" prefHeight="25.0" prefWidth="168.0" promptText="EMAIL" />
+          </children>
+        </Pane>
+        <Pane prefHeight="50.0" prefWidth="539.0" style="-fx-background-color: white; -fx-border-color: gray;">
+          <children>
+            <Button fx:id="btnNovo" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Novo">
+              <font>
+                <Font size="13.0" fx:id="x1" />
+              </font>
+              <graphic>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imagens/Add%20User%20Male-32.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Button fx:id="btnExcluir" font="$x1" layoutX="109.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Excluir">
+              <graphic>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imagens/Remove%20User%20Male-32.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Button fx:id="btnSalvar" font="$x1" layoutX="214.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Salvar">
+              <graphic>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imagens/Edit%20User%20Male-32.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Button fx:id="btnCancelar" font="$x1" layoutX="319.0" layoutY="4.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="105.0" text="Cancelar">
+              <graphic>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imagens/Rotate%20Left-32.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Button fx:id="btnSair" font="$x1" layoutX="441.0" layoutY="3.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Sair">
+              <graphic>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imagens/Exit-32.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+          </children>
+        </Pane>
+      </children>
+    </VBox>
+  </children>
 </AnchorPane>
