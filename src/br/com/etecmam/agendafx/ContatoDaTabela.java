@@ -3,15 +3,14 @@ package br.com.etecmam.agendafx;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class ContatoDaTabela {
+public class ContatoDaTabela {	
 	
-	private Contato contato;
+	private Contato contato;	
 	
 	private SimpleLongProperty codigo;
 	private SimpleStringProperty nome;
 	private SimpleStringProperty email;
-	private SimpleStringProperty fone;
-			
+	private SimpleStringProperty fone;			
 
 	public ContatoDaTabela(Contato contato) {
 		setContato(contato);
@@ -29,6 +28,7 @@ public class ContatoDaTabela {
 		fone = new SimpleStringProperty( contato.getFone() );
 	}
 
+	// GERAR GETTERS E SETTERS
 
 	public SimpleLongProperty getCodigo() {
 		return codigo;
